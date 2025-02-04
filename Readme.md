@@ -65,17 +65,17 @@ An AI-driven quantitative framework for mid-to-low frequency trading, including 
 
 ## **Project Structure**
 ai-quant-framework/
-├── config/ # Configuration files
-├── data/ # Data storage
-├── factors/ # Factor development
-├── models/ # AI models
-├── news/ # News analysis
-├── strategies/ # Trading strategies
-├── tests/ # Unit tests
-├── llm/ # Large language model integration
-├── backtest.py # Backtesting script
-├── llm_analysis.py # LLM-based stock analysis
-├── dashboard.py # Streamlit dashboard
+├── config/                  # Configuration files
+├── data/                    # Data storage
+├── factors/                 # Factor development
+├── models/                  # AI models
+├── news/                    # News analysis
+├── strategies/              # Trading strategies
+├── tests/                   # Unit tests
+├── llm/                     # Large language model integration
+├── backtest.py              # Backtesting script
+├── llm_analysis.py          # LLM-based stock analysis
+├── dashboard.py             # Streamlit dashboard
 └── README.md
 
 ## **LLM Integration**
