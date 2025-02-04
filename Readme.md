@@ -5,7 +5,7 @@
 [![VeighNa](https://img.shields.io/badge/VN.PY-3.0-green)](https://www.vnpy.com/)
 [![Qlib](https://img.shields.io/badge/Qlib-0.8.0-orange)](https://github.com/microsoft/qlib)
 
-An AI-driven quantitative framework for mid-to-low frequency trading, including backtesting, factor development, news analysis, and risk management.
+An AI-driven quantitative framework for mid-to-low frequency trading, including backtesting, factor development, news analysis, risk management, and **semi-automated stock selection using large language models (LLMs)**.
 
 ---
 
@@ -16,6 +16,8 @@ An AI-driven quantitative framework for mid-to-low frequency trading, including 
 - **News Analysis**: Real-time news scraping and sentiment analysis.
 - **Risk Management**: Dynamic position control and risk metrics (PyFolio).
 - **Visualization**: Interactive dashboards with Streamlit.
+- **LLM Integration**: Semi-automated stock analysis and selection using large language models (e.g., GPT-4, LLaMA).
+- **Trading Signals**: Generate buy/sell signals based on LLM analysis and quantitative models.
 
 ---
 
@@ -24,46 +26,41 @@ An AI-driven quantitative framework for mid-to-low frequency trading, including 
    ```bash
    git clone https://github.com/yourusername/ai-quant-framework.git
    cd ai-quant-framework
-Install dependencies:
+   ```
 
-bash
-复制
-pip install -r requirements.txt
-Configure data sources:
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Update config/tushare_config.json with your API key.
+3. Configure data sources:
+   - Update `config/tushare_config.json` with your API key
+   - Set up Redis for news caching (optional)
 
-Set up Redis for news caching (optional).
+4. Set up LLM:
+   - Install your preferred LLM (e.g., OpenAI GPT-4 or Hugging Face LLaMA)
+   - Update `config/llm_config.json` with your API key or local model path
 
-Usage
+## **Usage**
+
 1. Backtesting
-Run a backtest with the example strategy:
+   ```bash
+   python backtest.py --strategy example_strategy
+   ```
 
-bash
-复制
-python backtest.py --strategy example_strategy
 2. News Analysis
-Start the news scraper and sentiment analyzer:
+   ```bash
+   python news_analysis.py
+   ```
 
-bash
-复制
-python news_analysis.py
-3. Visualization
-Launch the Streamlit dashboard:
+3. LLM Stock Analysis
+   ```bash
+   python llm_analysis.py --model gpt-4 --symbol AAPL
+   ```
 
-bash
-复制
-streamlit run dashboard.py
-Project Structure
-复制
-ai-quant-framework/
-├── config/                  # Configuration files
-├── data/                    # Data storage
-├── factors/                 # Factor development
-├── models/                  # AI models
-├── news/                    # News analysis
-├── strategies/              # Trading strategies
-├── tests/                   # Unit tests
-├── backtest.py              # Backtesting script
-├── dashboard.py             # Streamlit dashboard
-└── README.md
+4. Visualization
+   ```bash
+   streamlit run dashboard.py
+   ```
+
+## **Project Structure**
