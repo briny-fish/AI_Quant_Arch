@@ -64,3 +64,33 @@ An AI-driven quantitative framework for mid-to-low frequency trading, including 
    ```
 
 ## **Project Structure**
+ai-quant-framework/
+├── config/ # Configuration files
+├── data/ # Data storage
+├── factors/ # Factor development
+├── models/ # AI models
+├── news/ # News analysis
+├── strategies/ # Trading strategies
+├── tests/ # Unit tests
+├── llm/ # Large language model integration
+├── backtest.py # Backtesting script
+├── llm_analysis.py # LLM-based stock analysis
+├── dashboard.py # Streamlit dashboard
+└── README.md
+
+## **LLM Integration**
+
+### 1. Stock Analysis
+The framework integrates large language models (LLMs) to provide semi-automated stock analysis. The LLM analyzes financial data, news sentiment, and technical indicators to generate insights and recommendations.
+
+### 2. Buy/Sell Signals
+The LLM generates buy/sell signals based on a combination of quantitative models and qualitative analysis. These signals can be used to guide trading decisions.
+
+## **License**
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
+## **Acknowledgments**
+- VeighNa for the core trading framework
+- Qlib for AI-driven factor mining
+- tushare for financial data
+- OpenAI and Hugging Face for large language models
