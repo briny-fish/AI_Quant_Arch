@@ -72,9 +72,9 @@ ai-quant-framework/
 ├── news/                    # News analysis        
 ├── strategies/              # Trading strategies       
 ├── tests/                   # Unit tests       
-├── llm/                     # Large language model integration 
+├── llm/                     # Large language model integration     
 ├── backtest.py              # Backtesting script   
-├── llm_analysis.py          # LLM-based stock analysis 
+├── llm_analysis.py          # LLM-based stock analysis     
 ├── dashboard.py             # Streamlit dashboard  
 └── README.md   
 
