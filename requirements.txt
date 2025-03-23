@@ -1,0 +1,31 @@
+# 核心依赖
+vnpy>=3.0.0
+pyqlib
+tushare
+vnpy_rqdata
+
+# 数据处理
+pandas
+numpy
+scipy
+
+# 机器学习
+transformers
+scikit-learn
+
+# LLM相关
+openai
+llama-cpp-python
+
+# 数据库和缓存
+pymongo
+redis
+
+# Web界面
+streamlit
+plotly
+
+# 工具
+pytest
+black
+flake8 
